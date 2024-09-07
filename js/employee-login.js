@@ -8,7 +8,7 @@ document.getElementById('employeeLoginForm').addEventListener('submit', function
     console.log('Password:', password);
 
     // Пример: проверка данных и перенаправление на страницу сотрудников
-    if (email === 'employee@example.com' && password === 'password') {
+    if (email === 'maxim11393@gmail.com' && password === '11393') {
         alert('Вход выполнен успешно!');
         window.location.href = 'employee.html'; // Перенаправление на страницу сотрудников
     } else {
