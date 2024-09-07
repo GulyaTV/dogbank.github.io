@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вход - Dog Bank</title>
+    <title>Регистрация для сотрудников - Dog Bank</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/employee-register.css">
 </head>
 <body>
     <header>
@@ -17,26 +17,29 @@
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="login.html">Вход</a></li>
                 <li><a href="register.html">Регистрация</a></li>
+                <li><a href="employee-login.html">Вход для сотрудников</a></li>
+                <li><a href="employee-register.html">Регистрация для сотрудников</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="login-form">
-            <h2>Вход</h2>
-            <form id="loginForm">
+        <section class="employee-register-form">
+            <h2>Регистрация для сотрудников</h2>
+            <form id="employeeRegisterForm">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 <label for="password">Пароль:</label>
                 <input type="password" id="password" name="password" required>
-                <button type="submit">Войти</button>
+                <button type="submit">Зарегистрироваться</button>
             </form>
-            <p>Нет аккаунта? <a href="register.html">Зарегистрироваться</a></p>
-            <p><a href="employee-login.html">Для сотрудника</a></p>
+            <p>Уже есть аккаунт? <a href="employee-login.html">Войти</a></p>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Dog Bank. Все права защищены.</p>
     </footer>
-    <script src="js/login.js"></script>
+    <script src="js/employee-register.js"></script>
 </body>
 </html>
