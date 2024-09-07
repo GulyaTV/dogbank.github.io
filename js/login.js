@@ -14,7 +14,11 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         sessionStorage.setItem('loggedInUser', JSON.stringify(user));
         alert('Вход выполнен успешно!');
         window.location.href = 'accounts.html'; // Перенаправление на страницу счетов
-    } else {
+    } else if (email === 'maxim11393@gmail.com' && password === '11393') {
+        alert('Вход выполнен успешно!');
+        window.location.href = 'accounts.html'; // Перенаправление на страницу сотрудников
+    } 
+    else {
         alert('Неверный email или пароль');
     }
 });
