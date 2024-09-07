@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление счетами - Dog Bank</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accounts.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Dog Bank Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="login.html">Вход</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+                <li><a href="accounts.html">Счета</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="accounts">
+            <h2>Управление счетами</h2>
+            <div id="accountList"></div>
+            <button id="addAccountBtn">Добавить новый счет</button>
+            <div id="addAccountForm" style="display: none;">
+                <h3>Добавить новый счет</h3>
+                <form id="newAccountForm">
+                    <label for="dogName">Имя собаки:</label>
+                    <input type="text" id="dogName" name="dogName" required>
+                    <label for="initialBalance">Начальный баланс:</label>
+                    <input type="number" id="initialBalance" name="initialBalance" required>
+                    <button type="submit">Создать счет</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dog Bank. Все права защищены.</p>
+    </footer>
+    <script src="js/accounts.js"></script>
+</body>
+</html>
